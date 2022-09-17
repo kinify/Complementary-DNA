@@ -1,0 +1,19 @@
+def DNA_strand(dna):
+    x = dna.lower()
+    str = ""
+    for i in x:
+        if i == "at":
+            str += "ta"
+        if i == "t":
+            str += "a"
+        if i == "gc":
+            str += "cg"
+        if i == "g":
+            str += "c"
+        if i == "ta":
+            str += "at"
+        if i == "a":
+            str += "t"
+        if i == "c":
+            str += "g"
+    return str.upper()
